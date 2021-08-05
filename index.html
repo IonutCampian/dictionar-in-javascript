@@ -11,16 +11,14 @@
         <center>
          Enter your word here!
         </center>
-    </h1>
-    
+   </h1>
         <center>
         <input id = "dictionar" placeholder="Add a word">
         <button onclick= showWord();>Add this word!</button>
           
-         </center>  
-
+        </center>  
         <script >
-            var words = [''];
+          var words = [''];
           function showWord(){
               var word = document.getElementById("dictionar").value;
              if(words.indexOf(word) > -1){
@@ -31,7 +29,5 @@
              }
           }
         </script>
-        
-
 </body>
 </html>
