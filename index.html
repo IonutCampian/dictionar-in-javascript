@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dictionary</title>
 </head>
 <body>
     <h1>
@@ -13,20 +13,19 @@
         </center>
    </h1>
         <center>
-        <input id = "dictionar" placeholder="Add a word">
+        <input id = "dictionary" placeholder="Add a word">
         <button onclick= showWord();>Add this word!</button>
-          
         </center>  
         <script >
           var words = [''];
           function showWord(){
-              var word = document.getElementById("dictionar").value;
-             if(words.indexOf(word) > -1){
-                 alert('the word is already in the dictionary!');
-             }
-             else{
-                 words.push(word);
-             }
+                var word = document.getElementById("dictionary").value;
+                if(words.indexOf(word) > -1){
+                    alert('the word is already in the dictionary!');
+                }
+                else{
+                    words.push(word);
+                }
           }
         </script>
 </body>
