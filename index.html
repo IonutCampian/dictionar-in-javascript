@@ -16,16 +16,21 @@
         <input id = "dictionary" placeholder="Add a word">
         <button onclick= showWord();>Add this word!</button>
         </center>  
+        <center>
+            <h2 id = "answer">the word is already in the dictionary!</h2>
+        </center>
         <script >
-          var words = [''];
-          function showWord() {
+            document.getElementById("answer").style.visibility = 'hidden'; 
+            var words = [''];
+            function showWord() {
                 var word = document.getElementById("dictionary").value;
                 if(words.indexOf(word) > -1){
-                    alert('the word is already in the dictionary!');
+                    document.getElementById("answer").style.visibility = 'visible';
                 } else{
                     words.push(word);
+                    document.getElementById("answer").style.visibility = 'hidden';
                 }
-          }
+            }
         </script>
 </body>
 </html>
